@@ -1,0 +1,38 @@
+/* YourReactComponent.css */
+.dir-grid-container {
+    display: grid;
+    grid-template-areas:
+      " . north . "
+      "west center east"
+      " . south . ";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* height: 100vh; */
+    width:200px;
+  }
+  
+  .dir-button {
+    grid-area: center;
+    width: 100px;
+    height: 40px;
+  }
+  .dir-button:nth-child(1) {
+    grid-area: north;
+  }
+  .dir-button:nth-child(2) {
+    grid-area: east;
+  }
+  .dir-button:nth-child(3) {
+    grid-area: south;
+  }
+  .dir-button:nth-child(4) {
+    grid-area: west;
+  }
+  
+
+  .image-container {
+    /* border:4px solid black; */
+    width: 40px;
+    transition: transform 0.5s ease-in-out;
+  }
+  

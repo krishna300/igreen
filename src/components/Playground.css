@@ -1,0 +1,30 @@
+.area-grid-container {
+    display: grid;
+    /* margin: auto; */
+    border:2px solid red;
+    width:450px;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-rows: repeat(5, 1fr); /* 5 rows */
+    gap: 10px; /* Adjust the gap between the divs as needed */
+  }
+  
+  .area-grid-item {
+    height:60px;
+    width:60px;
+    border: 1px solid #000; /* Add a border for visualization */
+    padding: 10px; /* Add padding for spacing within each box */
+    text-align: center; /* Center the content if any */
+  }
+
+  .current-box {
+    width:30px;
+    height:30px;
+
+    border:5px solid green;
+    background: url('../assets/robo4.png');
+    opacity: 0.4;
+    background-size: cover; /* This property makes the image cover the entire container */
+    background-position: center; /* This property centers the image within the container */
+    background-repeat: no-repeat;
+  }
+  
